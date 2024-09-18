@@ -6,7 +6,7 @@ int main(){
     int max;
     const int periods=4;
     int sales[periods];
-    //int newsales[periods];
+    int newsales[periods];
 // intialization of an array
 for (int i = 0; i < periods; i++)
 {
@@ -35,5 +35,18 @@ for (int i = 0; i < periods; i++)
            
 }
 cout<<"the largest value is:"<<max<<endl;
+for (int i = 0; i < periods; i++)
+{
+   newsales[i] = sales[i];
+}
+for (int i = 0; i < periods; i++)
+{
+    cout<<newsales[i]<<endl;
+}
+cout<<"printing the array in the backward:"<<endl;
+for (int i = periods-1; i >= 0; i--)
+{
+    cout<<sales[i]<<endl;
+}
 return 0;
 }
